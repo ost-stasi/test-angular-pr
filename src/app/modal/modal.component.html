@@ -11,6 +11,6 @@
     <option *ngFor="let type of charttypes | keyvalue" >{{type.value}}</option>
 </select>
 </div>
-<div class="modal-footer">
+<div class="modal-footer"> 
 <button [disabled]="chart_title ==='' || x_title === '' || y_title === ''" class="btn btn-primary" on-click="save_changes()" type="button"> Сохранить</button>
 </div>
