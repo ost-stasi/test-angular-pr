@@ -5,7 +5,7 @@
 <input [(ngModel)]="chart_title" type="text"  class="form-control"  placeholder="Название" required/><br>
 <input [(ngModel)]="x_title" type="text" class="form-control" placeholder="Подпись оси x"/><br>
 <input [(ngModel)]="y_title" type="text" class="form-control" placeholder="Подпись оси y"/><br>
-<input [(ngModel)]="color" type="text" class="form-control" placeholder="Цвет"/><br>
+<input [(ngModel)]="color" type="text" class="form-control" placeholder="Цвет"/><br> 
 <label for="type">Тип диаграммы</label>
 <select [(ngModel)]="type" class="form-control">
     <option *ngFor="let type of charttypes | keyvalue" >{{type.value}}</option>
