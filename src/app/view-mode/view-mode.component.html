@@ -1,0 +1,5 @@
+<input *ngIf="charts.length !==0" type="text" class="form-control" [(ngModel)]="period" (ngModelChange)="filter_chartdata()" [inputMask]="dateInputMask" placeholder="Период">
+<h1>Ваши диаграммы</h1>
+<ul>
+<li *ngFor="let chart of charts"><app-highchart [x_data]="x_data" [y_data]="y_data" [chart]="chart"></app-highchart></li>
+</ul>

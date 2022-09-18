@@ -1,0 +1,11 @@
+.button-icon{
+    margin-left:10px;
+    margin-right: 5px;
+}
+.chart-inf{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(94, 88, 88);
+    border-radius: 6px;
+    margin: 10px;
+}
