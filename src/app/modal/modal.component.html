@@ -2,7 +2,7 @@
 <h4><span *ngIf="form_type=='add'">Добавить</span><span *ngIf="form_type=='edit'">Редактировать</span> диаграмму</h4>
 </div>
 <div class="modal-body">
-<input [(ngModel)]="chart_title" type="text" class="form-control" placeholder="Название"/><br>
+<input [(ngModel)]="chart_title" type="text"  class="form-control"  placeholder="Название" required/><br>
 <input [(ngModel)]="x_title" type="text" class="form-control" placeholder="Подпись оси x"/><br>
 <input [(ngModel)]="y_title" type="text" class="form-control" placeholder="Подпись оси y"/><br>
 <input [(ngModel)]="color" type="text" class="form-control" placeholder="Цвет"/><br>
@@ -12,5 +12,5 @@
 </select>
 </div>
 <div class="modal-footer">
-<button class="btn btn-primary" on-click="save_changes()" type="button"> Сохранить</button>
+<button [disabled]="chart_title ==='' || x_title === '' || y_title === ''" class="btn btn-primary" on-click="save_changes()" type="button"> Сохранить</button>
 </div>
