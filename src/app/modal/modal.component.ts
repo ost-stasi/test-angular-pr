@@ -4,7 +4,6 @@ import { Store } from '@ngrx/store';
 import { AddChart, ChangeChart } from 'src/store/actions/chart.action';
 import { IAppState } from 'src/store/states/app.state';
 import { ChartTypes } from 'src/enums/charttype.enun';
-import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-modal',
